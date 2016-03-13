@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Huangbiao's Books --Book Detial</title>
+	<script src="{{ static_url('scripts/inventory.js') }}" type='application/javascript></script>
+</head>
+<body>
+	<div>
+		<h1>Huangbiao's Books></h1>
+		<hr/>
+		<p><h2>The Definitive Guide to the Internet</h2><em>Anonymous</em></p>
+	</div>
+	<input type='hidden' id='seesion' value="{{ session }}">
+	<div id='add-to-cart'>
+		<p><span stype="color:red;">Only<span id='count'>{{ count }}</span>left stock! Order now!</span></p>
+		<p>$20.00<input type="submit"></p>
+	</div>
+	<div id='remove-from-cart' style="display:none;">
+		<p><span style="color:green"></span></p>
+		<p><input type='submit' ></p>
+	</div>
+	
+</body>
+</html>
